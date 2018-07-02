@@ -70,9 +70,7 @@ else {
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			$response = curl_exec($ch);
 			curl_close($ch);
-			
-			$response = json_decode($response);
-			var_dump($response);
+
 		}
 		sleep (30);
 	}
