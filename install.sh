@@ -25,6 +25,7 @@ echo 'deb http://archive.ubuntu.com/ubuntu trusty-updates main universe restrict
 # Install Dependencie
 apt-get update -qq
 apt-get install -qy php5-cli
+apt-get install -qy php5-curl
 
 #########################################
 ##  FILES, SERVICES AND CONFIGURATION  ##
