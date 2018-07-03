@@ -5,11 +5,11 @@
 function tolog ($text) {
     echo $text . "\n";
 }
-$api_url = "https://api.cloudflare.com/client/v4/zones/";
+$cf_url = "https://api.cloudflare.com/client/v4/zones/";
 $cf_email = getenv('CF_EMAIL');
 $cf_api = getenv('CF_API');
 #$cf_zone_id = getenv('CF_ZONE_ID'); #no longer needed
-$dns_entry = getenv('CF_HOST');
+$cf_host = getenv('CF_HOST');
 if (!isset($cf_email, $cf_api, $cf_host)) {
     tolog("CF_EMAIL, CF_API, and CF_HOST must be set");
 	tolog ("Dying...");
